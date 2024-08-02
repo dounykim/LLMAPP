@@ -1,5 +1,4 @@
 # 챗봇 생성을 위한 코드를 chatbot.py라는 이름으로 작성
-%%writefile chatbot.py
 import streamlit as st
 from langchain.llms import OpenAI
 
