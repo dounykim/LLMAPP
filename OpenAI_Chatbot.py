@@ -5,7 +5,8 @@ from langchain.llms import OpenAI
 st.title('간단한 챗봇')
 
 # 사용자가 OpenAI API 키를 입력할 수 있도록 사이드바에 입력란을 생성한다. 입력된 키는 password 타입으로 표시되어 보안이 유지된다.
-openai_api_key = st.sidebar.text_input('OpenAI API Key', st.secrets['OPENAI_API_KEY'], type='password')
+# openai_api_key = st.sidebar.text_input('OpenAI API Key', st.secrets['OPENAI_API_KEY'], type='password')
+openai_api_key = st.sidebar.text_input('OpenAI API Key', type='password')
 
 def generate_response(input_text): # 사용자가 입력한 텍스트에 대해 GPT 모델을 사용해 응답을 생성하고, 그 결과를 화면에 표시한다.
     llm = OpenAI(temperature=0.7, openai_api_key=openai_api_key)
