@@ -1,7 +1,7 @@
 # 챗봇 생성을 위한 코드를 chatbot.py라는 이름으로 작성
 import streamlit as st
 from langchain.llms import OpenAI
-# OPEN_API_KEY = st.secrets['OPENAI_API_KEY']
+OPEN_API_KEY = st.secrets['OPENAI_API_KEY']
 
 st.title('간단한 챗봇')
 
